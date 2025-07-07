@@ -1,0 +1,132 @@
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2c1a0e;
+}
+
+.hero {
+  margin: 0;
+  padding: 0;
+  background-image: url('../public/juice.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.welcomeSection {
+  margin: 0;
+  padding: 0;
+  background-image: url('../public/retro-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  color: rgb(252, 239, 140);
+  margin-bottom: 1.5rem;
+}
+
+.heroForm {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.welcomeContainer {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.guideCard {
+  background-color: rgba(251, 245, 226, 0.85);
+  color: #5e4323;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 0 auto 2rem;
+  max-width: 600px;
+  font-size: 0.95rem;
+}
+
+.welcomeTitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: rgb(255, 229, 172);
+  text-shadow: 1px 0 1px black;
+  margin-bottom: 1rem;
+}
+
+.welcomeForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.heroInput {
+  background-color: #FAF4E8;
+  border: 1px solid #c89c63;
+  border-radius: 20px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  color: #5a3a1b;
+  width: 160px;
+}
+
+.heroInput::placeholder {
+  color: #bda88d;
+}
+
+.heroButton {
+  background-color: #D97706;
+  border: none;
+  border-radius: 20px;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.heroButton:hover {
+  background-color: #b35c00;
+}
+
+.resultList {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.resultList li {
+  background-color: #fffdf9;
+  color: #3e2c20;
+  border: 1px solid #f0e6d8;
+  padding: 0.6rem 1rem;
+  border-radius: 16px;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
