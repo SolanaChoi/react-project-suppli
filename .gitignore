@@ -1,0 +1,14 @@
+# node_modules는 무조건 제외
+node_modules
+
+# 환경 변수 파일
+.env
+
+# 시스템 파일
+.DS_Store
+
+# 로그 파일
+*.log
+
+#가상환경
+react-project/
