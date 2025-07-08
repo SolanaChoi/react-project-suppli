@@ -45,7 +45,7 @@ function Welcome() {
   return (
     <section className="welcomeSection">
         <div className="welcomeContainer">
-            <h2 className="welcomeTitle"> 반값습니다. {name}님! 좋아하는 곡을 입력하세요.
+            <h2 className="welcomeTitle"> 반갑습니다. {name}님! 좋아하는 곡을 입력하세요.
                 <br/>비슷한 곡 5개를 추천해드릴게요 🎧</h2>
             <div className="guideCard">
             🎵 아티스트명과 곡명을 최대한 정확하게 입력하세요.
@@ -74,7 +74,20 @@ function Welcome() {
           <button className="heroButton" type="submit">추천받기</button>
         </form>
 
-        {loading && <p>로딩 중...</p>}
+        {loading && (
+          <div className="loadingSpinner">
+           <span className="l">l</span>
+           <span className="o">o</span>
+           <span className="a">a</span>
+           <span className="d">d</span>
+           <span className="i">i</span>
+           <span className="n">n</span>
+           <span className="g">g</span>
+           <span className="dot1">.</span>
+           <span className="dot2">.</span>
+           <span className="dot3">.</span>
+          </div>
+          )}
 
         {recommendations.length > 0 && (
             <ul className="resultList">

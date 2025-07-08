@@ -114,6 +114,42 @@ body {
   background-color: #b35c00;
 }
 
+.loadingSpinner {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffe83d;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.loadingSpinner .l,
+.loadingSpinner .o,
+.loadingSpinner .a,
+.loadingSpinner .d,
+.loadingSpinner .i,
+.loadingSpinner .n,
+.loadingSpinner .g,
+.loadingSpinner .dot1,
+.loadingSpinner .dot2,
+.loadingSpinner .dot3 {
+  animation: blink 1.5s infinite;
+  font-weight: bold;
+}
+
+.loadingSpinner .dot2 {
+  animation-delay: 0.2s;
+}
+.loadingSpinner .dot3 {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
 .resultList {
   list-style: none;
   padding: 0;
